@@ -1,0 +1,140 @@
+.skills {
+  padding: 100px 0 110px;
+}
+
+.skills__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 60px 40px 0;
+}
+
+.skills__items img {
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.skills__items {
+  text-align: center;
+  width: 280px;
+}
+
+.skills__subtitle {
+  font-family: var(--inter);
+  font-weight: 700;
+  font-size: var(--font1);
+  line-height: var(--font2);
+  color: var(--white);
+  text-align: center;
+  padding: 50px 0 20px;
+}
+
+.skills__description {
+  font-family: var(--inter);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--white);
+  text-align: center;
+}
+
+/* light theme */
+
+.skills__subtitle.light__theme._active,
+.skills__description.light__theme._active {
+  color: var(--bg-dark);
+}
+
+@media (max-width: 1430px) {
+  .skills {
+    padding: 100px 0 160px ;
+  }
+
+  .skills__list {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    gap: 67px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .skills {
+    padding: 70px 0 160px;
+  }
+}
+
+@media (max-width: 850px) {
+.skills {
+    padding-bottom: 160px;
+  }
+}
+
+@media (max-width: 775px) {
+  .skills {
+    padding: 10px 70px 158px;
+  }
+
+  .skills__list {
+    padding: 44px 40px 0;
+    gap: 76px 70px;
+  }
+
+  .skills__subtitle {
+    padding: 31px 0 20px;
+  }
+
+  .skills__description {
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 710px) {
+  .skills__list {
+    gap: 35px 13px;
+  }
+}
+
+  .skills__description {
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 710px) {
+  .skills__list {
+    gap: 35px 13px;
+  }
+}
+
+@media (max-width: 670px) {
+  .skills__list {
+    gap: 40px 30px;
+  }
+  
+  .skills {
+    padding: 10px 70px 100px;
+  }
+
+  .skills__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .skills__subtitle { 
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 610px) {
+  .skills__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .skills {
+    padding: 10px 40px 50px;
+  }
+}

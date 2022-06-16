@@ -1,0 +1,133 @@
+.hero__title {
+  font-family: var(--merriweather);
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 120px;
+  color: var(--white);
+  padding: 180px 0 10px;
+}
+
+.hero {
+  background-image: url('../img/bg.jpg');
+  background-position: center -70px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 840px;
+}
+
+.hero__container {
+  padding: 0 80px;
+}
+
+.hero__description {
+  font-family: var(--inter);
+  font-weight: 400;
+  font-size: var(--font1);
+  line-height: var(--font2);
+  color: var(--white);
+  width: 470px;
+  margin-bottom: 25px;
+}
+
+/* light theme */
+
+.hero.light__theme._active {
+  background-image: url('../img/light/bg.jpg');
+}
+
+.hero__title.light__theme._active,
+.hero__description.light__theme._active {
+  color: var(--bg-dark);
+}
+@media (max-width: 1350px) {
+  .hero {
+    height: 650px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero {
+    height: 550px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero__title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 64px;
+    color: var(--white);
+    padding: 103px 0 20px;
+  }
+
+  .hero {
+    height: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    height: 550px;
+  }
+}
+
+@media (max-width: 775px) {
+  .hero {
+    height: 590px;
+    background-position: -5px -101px;
+    background-size: auto 620px;
+    }
+
+  .hero__container {
+    padding: 0 60px;
+  }
+
+  .hero__description {
+    font-size: var(--font1);
+    line-height: 24px;
+    width: 390px;
+    margin-bottom: 60px;
+  }
+
+  .hero__title {
+    padding: 99px 0 19px;
+  }
+}
+
+@media (max-width: 670px) {
+  .hero__description {
+    width: 300px;
+  }
+  .hero {
+    background-position: -90px -101px;
+  }
+
+  .hero__container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    background-position: -230px -51px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    background-position: -258px -155px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero {
+    background-position: -359px -155px;
+  }
+
+  .hero__description {
+    width: 250px;
+  }
+}
+
+

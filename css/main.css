@@ -1,0 +1,184 @@
+.section-title, .contacts-title {
+  font-family: var(--merriweather);
+  font-weight: 700;
+  font-size: var(--font2);
+  line-height: 80px;
+  color: var(--gold);
+  text-align: center;
+  overflow: hidden;
+}
+
+.section-title span:before,
+.section-title span:after  {
+  content:'';
+  background-color: var(--gold);
+  width: 274px;
+  height: 2px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.portfolio_title span:before,
+.portfolio_title span:after  {
+  width: 240px;
+}
+
+.section-title span:before {
+  margin-left: -100%;
+  left: -23px;
+  top: -2px;
+}
+
+.section-title span:after {
+  margin-right: -100%;
+  right: -20px;
+  top: -2px;
+}
+
+.button, 
+.button__transparent {
+  border: 2px solid var(--gold);
+  width: 220px;
+  height: 55px;
+
+  font-family: var(--inter);
+  font-weight: 400;
+  font-size: var(--font1);
+  line-height: var(--font2);
+  cursor: pointer;
+  color: var(--bg-dark);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button {
+  background-color: var(--gold);
+}
+
+.button__transparent {
+  background-color: transparent;
+  color: var(--gold);
+}
+
+.btn-portfolio.btn-active,
+.btn-portfolio.btn-active:hover {
+  background-color: var(--gold);
+  color: var(--bg-dark);
+}
+
+.button:hover{
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.button__transparent:hover {
+  color: var(--white);
+}
+
+.none {
+  display: none;
+}
+
+/* light theme */
+
+.hero__button.light__theme._active {
+  background-color: var(--white);
+}
+
+.section-title.light__theme._active, 
+.contacts-title.light__theme._active  {
+  color: var(--bg-dark);
+}
+
+.section-title.light__theme._active span:before,
+.section-title.light__theme._active span:after {
+  background-color: var(--bg-dark);
+}
+
+.button.light__theme._active:hover {
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.button__transparent.light__theme._active  {
+  background-color: var(--gold);
+  color: var(--bg-dark);
+}
+
+.hero__button.light__theme._active:hover,
+.button__contacts.light__theme._active:hover {
+  background-color: var(--bg-dark);
+  color: var(--gold); 
+}
+
+.button__transparent.light__theme._active:hover  {
+  color: var(--white);
+}
+
+.btn-portfolio.btn-active.light__theme._active,
+.btn-portfolio.btn-active.light__theme._active:hover  {
+  background-color: var(--bg-dark);
+  color: var(--gold); 
+}
+
+
+@media (max-width: 1000px) {
+  .section-title  {
+    font-size: 32px;
+  }
+
+  .contacts-title {
+    font-size: 32px;
+    line-height: 64px;
+  }
+
+  .section-title span:before,
+  .section-title span:after  {
+    width: 117px;
+  }
+}
+
+@media (max-width: 775px) {
+  .portfolio_title span:before,
+  .portfolio_title span:after  {
+    width: 88px;
+  }
+}
+
+@media (max-width: 600px) { 
+  .button, 
+  .button__transparent {
+    width: 170px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .section-title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  .portfolio_title span:before, 
+  .portfolio_title span:after {
+    width: 55px;
+  }
+}
+
+@media (max-width: 420px) {
+  .section-title span:before, 
+  .section-title span:after {
+    width: 70px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

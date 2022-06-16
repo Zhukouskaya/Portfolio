@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <title>Portfolio || Alexa Rise</title>
+</head>
+<body class="light__theme">
+   <header>
+    <div class="header__container light__theme container">
+      <div class="header__logo light__theme">
+      </div>
+      <div class="header__reverse">
+        <div class="header__menu menu light__theme">
+          <div class="menu__icon light__theme">
+            <span class="menu light__theme"></span>
+          </div>
+          <nav class="header__nav light__theme">
+            <ul class="nav__list">
+              <li class="nav__item light__theme">
+                <a data-goto="#skills" class="nav__link" href="#" data-i18="skills">Skills</a> 
+              </li>
+              <li class="nav__item light__theme">
+                <a data-goto="#portfolio" class="nav__link" href="#" data-i18="portfolio">Portfolio</a>
+              </li>
+              <li class="nav__item light__theme">
+                <a  data-goto="#price" class="nav__link" href="#" data-i18="price">Price</a> 
+              </li>
+              <li class="nav__item light__theme">
+                <a data-goto= "#contacts" class="nav__link" href="#" data-i18="contacts">Contacts</a> 
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__noreverse">
+          <div class="header__language light__theme"> 
+          <button class="header__language_en lang light__theme lang-active" data-language="en">en</button>
+          <span>/</span>  
+          <button class="header__language_ru lang light__theme" data-language="ru">ru</button>
+        </div>
+        <button class="header__theme light__theme">
+        </button>
+        </div>
+
+      </div>
+    </div>
+  </header> 
+  <main class="main">
+    <h2 class="none">тут ничего нет</h2>
+      <section class="hero light__theme container ">
+        <div class="hero__container">
+          <h2 class="hero__title light__theme" data-i18="hero-title">Alexa Rise</h2>
+          <p class="hero__description light__theme" data-i18="hero-text">
+            Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise
+          </p>
+          <button class="button hero__button light__theme" data-i18="hire">
+            Hire me
+          </button>
+        </div>
+      </section>
+      <section class="skills container" id="skills">
+        <h2 class="section-title light__theme" ><span data-i18="skills">Skills</span></h2>
+        <div class="skills__list">
+          <div class="skills__items">
+            <img src="./img/camera.svg" alt="camera">
+            <p class="skills__subtitle light__theme" data-i18="skill-title-1">Digital photography</p>
+            <p class="skills__description light__theme" data-i18="skill-text-1">High-quality photos in the studio and on the nature</p>
+          </div>
+          <div class="skills__items">
+            <img src="./img/video.svg" alt="video">
+            <p class="skills__subtitle light__theme" data-i18="skill-title-2">Video shooting</p>
+            <p class="skills__description light__theme" data-i18="skill-text-2">Capture your moments so that they always stay with you</p>
+          </div>
+          <div class="skills__items">
+            <img src="./img/image.svg" alt="video">
+            <p class="skills__subtitle light__theme" data-i18="skill-title-3">Retouch</p>
+            <p class="skills__description light__theme" data-i18="skill-text-3">I strive to make photography surpass reality</p>
+          </div>
+          <div class="skills__items">
+            <img src="./img/mic.svg" alt="mic">
+            <p class="skills__subtitle light__theme" data-i18="skill-title-4">Audio</p>
+            <p class="skills__description light__theme" data-i18="skill-text-4">Professional sounds recording for video, advertising, portfolio</p>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio container" id ="portfolio">
+        <h2 class="section-title light__theme portfolio_title"><span data-i18="portfolio">Portfolio</span></h2>
+        <div class="portfolio__buttons">
+          <button class="button__transparent light__theme btn-portfolio" data-season="winter" data-i18="winter">
+            Winter
+          </button>
+          <button class="button__transparent light__theme btn-portfolio" data-season="spring" data-i18="spring">
+            Spring
+          </button>
+          <button class="button__transparent light__theme btn-portfolio" data-season="summer" data-i18="summer">
+            Summer
+          </button>
+          <button class="button__transparent light__theme btn-portfolio btn-active" data-season="autumn" data-i18="autumn">
+            Autumn
+          </button>
+        </div>
+          <div class="portfolio__foto">
+            <img src="./img/portfolio/autumn/1.jpg" alt="foto" class="portfolio__foto_img">
+            <img src="./img/portfolio/autumn/2.jpg" alt="foto" class="portfolio__foto_img">
+            <img src="./img/portfolio/autumn/3.jpg" alt="foto" class="portfolio__foto_img">
+            <img src="./img/portfolio/autumn/4.jpg" alt="foto" class="portfolio__foto_img">
+            <img src="./img/portfolio/autumn/5.jpg" alt="foto" class="portfolio__foto_img">
+            <img src="./img/portfolio/autumn/6.jpg" alt="foto" class="portfolio__foto_img">
+          </div>
+        
+      </section>
+      <section class="price container" id="price">
+        <h2 class="section-title light__theme"><span data-i18="price">Price</span></h2>
+        <div class="price__block">
+          <div class="price__item">
+            <p class="price__subtitle light__theme" data-i18="standard">Standard</p>
+            <p class="price__price">500 $</p>
+            <p class="price__description light__theme" data-i18="price-description-1-span-1">One location</p>
+            <p class="price__description light__theme" data-i18="price-description-1-span-2">120 photos in color</p>
+            <p class="price__description light__theme" data-i18="price-description-1-span-3">12 photos in retouch</p>
+            <p class="price__description light__theme" data-i18="price-description-1-span-4">Readiness 2-3 weeks</p>
+            <p class="price__description light__theme" data-i18="price-description-1-span-5">Make up, visage</p>
+            <button class="button light__theme button-price" data-i18="order">
+              Order shooting
+            </button>
+          </div>
+
+          <div class="price__item">
+            <p class="price__subtitle light__theme" data-i18="premium">Premium</p>
+            <p class="price__price">700 $</p>
+            <p class="price__description light__theme" data-i18="price-description-2-span-1">One or two locations</p>
+            <p class="price__description light__theme" data-i18="price-description-2-span-2">200 photos in color</p>
+            <p class="price__description light__theme" data-i18="price-description-2-span-3">20 photos in retouch</p>
+            <p class="price__description light__theme" data-i18="price-description-2-span-4">Readiness 1-2 weeks</p>
+            <p class="price__description light__theme" data-i18="price-description-2-span-5">Make up, visage</p>
+            <button class="button light__theme button-price"  data-i18="order">
+              Order shooting
+            </button>
+          </div>
+
+          <div class="price__item">
+            <p class="price__subtitle light__theme" data-i18="gold">Gold</p>
+            <p class="price__price">1000 $</p>
+            <p class="price__description light__theme" data-i18="price-description-3-span-1">Three locations or more</p>
+            <p class="price__description light__theme" data-i18="price-description-3-span-2">300 photos in color</p>
+            <p class="price__description light__theme" data-i18="price-description-3-span-3">50 photos in retouch</p>
+            <p class="price__description light__theme" data-i18="price-description-3-span-4">Readiness 1 week</p>
+            <p class="price__description light__theme" data-i18="price-description-3-span-5">Make up, visage, hairstyle</p>
+            <button class="button light__theme button-price" data-i18="order">
+              Order shooting
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts" >
+        <div class="container contacts__container light__theme">
+          <h2 class="contacts-title light__theme" data-i18="contact-me">Contact me</h2>
+        <form>
+          <input class="light_theme" type="email" id="email" required placeholder="E-mail"> <br>
+          <input class="light_theme" type="tel" id="phone" name="phone" required data-ph="inputPhone" placeholder="Phone"> <br>
+          <textarea class="light_theme" id="story" name="story" data-text="textareaPlc" placeholder="Message"></textarea> <br>
+          <button class="button light__theme button__contacts" type="submit" data-i18="send-message">Send message</button>
+        </form>
+        </div>
+      </section>
+  </main>
+
+  <footer>
+    <div class="container"> 
+      <div class="footer__container light__theme container">
+        <div class="footer__github light__theme">
+          <span>©</span>
+          <span>2022</span>
+          <a target="_blank" href="https://github.com/Zhukouskaya">github</a>
+        </div>
+        <p class="footer__rss light__theme">
+          <a target="_blank" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+        </p>
+        <div class="footer__icon_list">
+          <ul class="footer__icon">
+            <li class="footer__icon _instagram light__theme">
+              <a target="_blank" href="https://www.instagram.com/">
+              </a>
+            </li>
+            <li class="footer__icon _facebook light__theme">
+              <a target="_blank" href="https://www.facebook.com/">
+              </a>
+            </li>
+            <li class="footer__icon _twitter light__theme">
+              <a target="_blank" href="https://twitter.com/">
+              </a>
+            </li>
+            <li class="footer__icon _pinterest light__theme">
+              <a target="_blank" href="https://www.pinterest.com/">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
+

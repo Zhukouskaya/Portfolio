@@ -1,0 +1,135 @@
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--inter);
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 50px;
+  color: var(--white);
+  padding: 48px 20px;
+}
+
+.footer__container a {
+  color: var(--white);
+}
+
+.footer__container a:hover {
+  color: var(--gold);
+  transition: 0.3s;
+}
+
+.footer__github span{
+  padding-right: 15px;
+}
+
+.footer__rss {
+  padding-left: 36px;
+}
+
+.footer__icon {
+  display: flex;
+}
+
+.footer__icon img {
+  vertical-align: middle;
+}
+
+.footer__icon a:first-child {
+  padding: 0;
+}
+
+.footer__icon._instagram a {
+  background-image: url('../img/social/inst.svg');
+
+}
+
+.footer__icon._facebook a {
+  background-image: url('../img/social/fb.svg');
+}
+
+.footer__icon._twitter a {
+  background-image: url('../img/social/tw.svg');
+}
+
+.footer__icon._pinterest a {
+  background-image: url('../img/social/pinterest.svg');
+}
+
+.footer__icon._pinterest a,
+.footer__icon._facebook a,
+.footer__icon._twitter a,
+.footer__icon._instagram a {
+  padding-left: 45px;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;  
+}
+
+.footer__icon._pinterest a:hover,
+.footer__icon._facebook a:hover,
+.footer__icon._twitter a:hover,
+.footer__icon._instagram a:hover {
+  filter: invert(70%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+  contrast(87%);
+  transition: 0.3s;
+}
+
+/* light theme */
+
+.footer__github.light__theme._active,
+.footer__github.light__theme._active a,
+.footer__rss.light__theme._active a {
+  color: var(--bg-dark);
+}
+
+.footer__container.light__theme._active a:hover {
+  color: var(--gold);
+  transition: 0.3s;
+}
+
+.footer__icon._instagram.light__theme._active a {
+  background-image: url('../img/light/social/inst.svg');
+}
+
+.footer__icon._facebook.light__theme._active a {
+  background-image: url('../img/light/social/fb.svg');
+}
+
+.footer__icon._twitter.light__theme._active a {
+  background-image: url('../img/light/social/tw.svg');
+}
+
+.footer__icon._pinterest.light__theme._active a {
+  background-image: url('../img/light/social/pinterest.svg');
+}
+
+@media (max-width: 800px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 0 40px;
+    line-height: 24px;
+  }
+
+  .footer__rss {
+    padding: 16px 0 29px;
+  }
+
+  .footer__icon li:first-child {
+    padding-left: 3px;
+  }
+}
+
+@media (max-width: 530px) {
+  .footer__container {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .footer__rss {
+    padding: 16px 0;
+  }
+  .footer__icon img {
+    height: 25px;
+  }
+
+}

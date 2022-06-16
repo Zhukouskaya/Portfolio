@@ -1,0 +1,13 @@
+:root {
+  /* colors */
+  --bg-dark: #000000;
+  --gold: #bdae82;
+  --white: #ffffff;
+
+  /* fonts */
+  --inter: 'Inter', sans-serif;
+  --merriweather: 'Merriweather', serif;
+  --font1: 20px;
+  --font2: 40px;
+
+}

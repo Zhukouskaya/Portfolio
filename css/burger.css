@@ -1,0 +1,148 @@
+body._lock {
+  overflow: hidden;
+}
+
+.menu__icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 620px;
+    height: 100%;
+    background-color: var(--bg-dark);
+    transition: right 0.3s ease 0s;
+    overflow: auto;
+    transform: translate(100%, 0px);
+  }
+
+  .header__nav.light__theme._active {
+    background-color: var(--white);
+  }
+
+  .header__nav.active_burg {
+    right: 620px;
+  }
+
+  .header__nav::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 70px;
+    z-index: 2;
+    padding: 0;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    padding: 134px 0 0 127px;
+    gap: 16px;
+  }
+
+  .nav__list:last-child {
+    margin-bottom: 0;
+  }
+
+  .nav__item a {
+    position: relative;
+    font-size: 35px;
+    line-height: 73px;
+  }
+
+  .nav__item:hover{
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+    transition: 0.3s;
+  }
+  .menu__icon {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 28px;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .menu__icon span,
+  .menu__icon::before,
+  .menu__icon::after {
+    right: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: white;
+  }
+
+  .menu__icon.light__theme._active span,
+  .menu__icon.light__theme._active::before,
+  .menu__icon.light__theme._active::after {
+    background-color: var(--bg-dark);
+  }
+  
+  .menu__icon::before,
+  .menu__icon::after {
+    content: '';
+  }
+
+  .menu__icon::before {
+    top: 0;
+
+  }
+  .menu__icon::after {
+    bottom: 0;
+  }
+
+  .menu__icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+
+  .menu__icon.active_burg span {
+    transform: scale(0) translate(0px, -50%);
+  }
+
+  .menu__icon.active_burg::before {
+    transform: scale(0) translate(0px, -50%);
+  }
+  
+  .menu__icon.active_burg::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+}
+
+@media (max-width: 619px) {
+  .nav__list {
+    padding: 100px 0 0 100px;
+  }
+}
+
+@media (max-width: 580px) {
+  .nav__list {
+    padding: 80px 0 0 170px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav__list {
+    padding: 80px 0 0 290px;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav__list {
+    padding: 80px 0 0 350px;
+  }
+}
