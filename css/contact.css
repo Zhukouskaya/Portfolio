@@ -114,6 +114,7 @@ textarea.light__theme._active,
 @media (max-width: 670px) {
   .contacts-title {
     padding-bottom: 15px;
+  }
 } 
 
   @media (max-width: 670px) {
@@ -189,9 +190,3 @@ textarea.light__theme._active,
     background-size: 115%;
   }
 }
-
-
-
-
-
-
